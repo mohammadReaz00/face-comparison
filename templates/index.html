@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Face Comparison</title>
+    <!-- Include Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h2 class="text-center">Face Comparison</h2>
+          <form id="compare-form" method="POST" action="/compare">
+            <div class="form-group">
+              <label for="url1">Image URL 1</label>
+              <input
+                type="text"
+                class="form-control"
+                name="url1"
+                id="url1"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="url2">Image URL 2</label>
+              <input
+                type="text"
+                class="form-control"
+                name="url2"
+                id="url2"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Compare</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Include jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
